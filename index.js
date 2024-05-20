@@ -8,10 +8,13 @@ const app = express();
 
 
 //connection
-mongoose.connect(process.env.MONGO_URL)
+const connectDB = async()=> {
+    await mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
     console.log("mongoDB connected");
 })
+}
+connectDB();
 
 
 //middleWares
