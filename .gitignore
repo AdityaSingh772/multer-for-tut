@@ -1,3 +1,20 @@
+# Ignore node_modules directory
 node_modules/
+
+# Ignore environment variables file
 .env
+
+# Optional: Ignore logs
+logs/
+*.log
+
+# Optional: Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+
 

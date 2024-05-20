@@ -6,6 +6,7 @@ const userRouter = require("./routes/user");
 const mongoose = require("mongoose");
 const app = express();
 
+
 //connection
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
